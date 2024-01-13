@@ -2,9 +2,11 @@
   "name": "start-cli",
   "version": "1.0.0",
   "description": "example cli",
-  "main": "index.ts",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./packages/index.js"
   },
   "author": "yusufgunes",
   "license": "ISC",
@@ -12,7 +14,11 @@
     "@clack/prompts": "^0.7.0",
     "picocolors": "^1.0.0"
   },
+  "include": [
+    "./**/*.ts"
+  ],
   "devDependencies": {
-    "@types/node": "^20.11.0"
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
   }
 }

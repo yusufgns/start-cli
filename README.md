@@ -1,1 +1,5 @@
-# start-cli
+# Start CLI
+
+```bash
+node start
+```
